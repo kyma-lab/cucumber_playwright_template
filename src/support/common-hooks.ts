@@ -18,7 +18,7 @@ let browser: ChromiumBrowser | FirefoxBrowser | WebKitBrowser | Browser;
 const tracesDir = 'traces';
 
 declare global {
-  // eslint-disable-next-line no-var
+
   var browser: ChromiumBrowser | FirefoxBrowser | WebKitBrowser | Browser;
 }
 

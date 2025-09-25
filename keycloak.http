@@ -1,0 +1,8 @@
+
+####
+POST http://localhost:8080/realms/master/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=test-client&username=testuser&password=testpass&scope=openid profile email
+
+##

@@ -1,6 +1,7 @@
 import { LaunchOptions } from '@playwright/test';
 const browserOptions: LaunchOptions = {
-  slowMo: 0,
+  slowMo: process.env.SLOWMO ? parseInt(process.env.SLOWMO) : 0,
+  headless: process.env.HEADED ? false : true,
   args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'],
   firefoxUserPrefs: {
     'media.navigator.streams.fake': true,
